@@ -1,3 +1,4 @@
+//Adam Hardy
 public class Project {
 
     public static void main(String[] args) {
@@ -5,7 +6,8 @@ public class Project {
         for(int value : magneto){
             System.out.println(value);
         }
-        BubbleSort(magneto);
+        //BubbleSort(magneto);
+        SelectionSort(magneto);
         System.out.println();
         for(int value : magneto){
             System.out.print(" " + value);
@@ -26,6 +28,23 @@ public class Project {
         }
     } 
 
+
+    public static void SelectionSort(int[] magneto) {
+        int minIndex, temp;
+
+        for(int i = 0; i < magneto.length - 1; i++) {
+            minIndex = i; 
+
+            for(int j = i + 1; j < magneto.length; j++){
+                if(magneto[j] < magneto[minIndex])
+                    minIndex = j;
+            }
+        
+        temp = magneto[i];
+        magneto[i] = magneto[minIndex] ;
+        magneto[minIndex] = temp;
+    }
+    }
     //public static void Swap() {
 
     //}
