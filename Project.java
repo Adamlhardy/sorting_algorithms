@@ -106,7 +106,7 @@ public class Project {
         int mainIndex = 0, leftMagnetoIndex = 0, rightMagnetoIndex = 0;
 
         if(leftMagnetoIndex < quickSilverSize && rightMagnetoIndex < polarisSize) {
-            if(quickSilver[leftMagnetoIndex] < polaris[polarisSize]){
+            if(quickSilver[leftMagnetoIndex] < polaris[rightMagnetoIndex]){
                 magneto[mainIndex] = quickSilver[leftMagnetoIndex];
                 mainIndex++;
                 leftMagnetoIndex++;
